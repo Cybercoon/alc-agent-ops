@@ -2,11 +2,11 @@
 
 ## Accomplishments
 
-Phase 0 established the foundational infrastructure for the ALC / Sisu Coaching & Consulting AI agent fleet.
+Phase 0 established the foundational infrastructure for the ALC / Advantage Leadership Consulting \(ALC\) AI agent fleet.
 
 ### Completed
 - X-Mansion host provisioned (192.168.4.65) — Ubuntu, Docker, compose stack
-- Six-agent Hermes deployment: Orchestrator (PX), Infrastructure (Architect), Converter (Beast), Researcher (Wolverine), Scout (Magneto), Builder (Forge)
+- Six-agent Hermes deployment: Orchestrator, Infrastructure, Converter, Researcher, Scout, Builder
 - A2A mesh wiring between all agents
 - Bearer token authentication configured fleet-wide
 - Danger Room hardware inventoried (.80 ironman GPU, .84 batman CPU)
@@ -18,7 +18,7 @@ Phase 0 established the foundational infrastructure for the ALC / Sisu Coaching 
 ### Lessons Captured
 - ironman hardening (init:true + cap_drop:ALL + no-new-privileges) kills Hermes UID drop → exit 111. Never apply to X-Mansion containers.
 - Compose must be patched surgically — never replace from ironman template.
-- HubSpot API key not persistent across container recreates; must be re-written to Converter (Beast) .env.
+- HubSpot API key not persistent across container recreates; must be re-written to Converter .env.
 
 ### Phase Gate
 Phase 0 → Phase 1 gate: bounded discovery complete; Phase 0 gate open pending Adam go/no-go.

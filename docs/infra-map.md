@@ -13,10 +13,10 @@
 
 | Container | Functional Name | A2A Port | MCP Port | LLM Provider |
 |---|---|---|---|---|
-| hermes-professor-x | Orchestrator | 18701 | 18711 | anthropic (Claude Sonnet 4.6) |
-| hermes-beast | Converter | 18702 | 18712 | openai (GPT-Astra) |
-| hermes-wolverine | Researcher | 18703 | 18713 | xai-oauth (Grok) |
-| hermes-architect | Infrastructure | 18704 | 18714 | anthropic (Claude Sonnet 4.6) |
+| hermes-orchestrator | Orchestrator | 18701 | 18711 | anthropic (Claude Sonnet 4.6) |
+| hermes-converter | Converter | 18702 | 18712 | openai (GPT-Astra) |
+| hermes-researcher | Researcher | 18703 | 18713 | xai-oauth (Grok) |
+| hermes-infrastructure | Infrastructure | 18704 | 18714 | anthropic (Claude Sonnet 4.6) |
 
 Compose file: `/home/batman/hermes-six-agent/deploy/x-mansion/compose.yaml`
 Stack name: `alc-hermes-x-mansion`

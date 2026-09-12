@@ -1,8 +1,8 @@
 # ALC Agent Ops
 
-Private repository for ALC and Sisu Coaching & Consulting AI agent operations.
+Private repository for ALC and Advantage Leadership Consulting \(ALC\) AI agent operations.
 
-This repo covers the **business agent fleet** — agents purpose-built to execute ALC and Sisu business functions. Governance and orchestration infrastructure lives in the separate `ai-council` repo.
+This repo covers the **business agent fleet** — agents purpose-built to execute ALC business functions. Governance and orchestration infrastructure lives in the separate `ai-council` repo.
 
 ## Structure
 
@@ -15,16 +15,16 @@ alc-agent-ops/
   /scripts/          ← Utility scripts (health checks, relay, A2A tools)
 ```
 
-## ALC / Sisu Agent Fleet
+## ALC Agent Fleet
 
-Executes business functions for ALC and Sisu Coaching & Consulting.
+Executes business functions for ALC and Advantage Leadership Consulting \(ALC\).
 
 | Agent | Functional Name | Role | Status |
 |---|---|---|---|
-| Beast | Converter | CRM / Conversion / Delivery | Active |
-| Wolverine | Researcher | Prospect / Discovery / Marketing | Active |
-| Magneto | Scout | Prospect (local CPU) | PARKED |
-| Forge | Builder | Delivery (local GPU) | PARKED |
+| Converter | Converter | CRM / Conversion / Delivery | Active |
+| Researcher | Researcher | Prospect / Discovery / Marketing | Active |
+| Scout | Scout | Prospect (local CPU) | PARKED |
+| Builder | Builder | Delivery (local GPU) | PARKED |
 
 ## Governance & Orchestration
 

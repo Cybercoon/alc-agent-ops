@@ -1,7 +1,7 @@
 # Phase 1 Plan
 
 ## Objectives
-Bring the ALC / Sisu Coaching & Consulting agent fleet to operational readiness for business use.
+Bring the ALC / Advantage Leadership Consulting \(ALC\) agent fleet to operational readiness for business use.
 
 ## Infra Checklist
 
@@ -19,10 +19,10 @@ Bring the ALC / Sisu Coaching & Consulting agent fleet to operational readiness 
 - [ ] Shared filesystem mounted and readable by all containers
 - [ ] Mem0 operational (no 401s)
 - [ ] GitHub repos live (alc-agent-ops + ai-council)
-- [ ] Converter (Beast) HubSpot integration verified post-recreate
+- [ ] Converter HubSpot integration verified post-recreate
 - [ ] Config preamble injected to all active agents
 
 ## Out of Scope (Phase 2+)
-- Scout (Magneto) and Builder (Forge) reactivation
+- Scout and Builder reactivation
 - n8n workflow automation
 - ICP ML pipeline

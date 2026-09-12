@@ -10,17 +10,17 @@ Cross-build lessons shared between AI Council and ALC Fleet. Every infrastructur
 **Rule:** Never apply ironman hardening to X-Mansion Hermes containers. Patch compose surgically only.
 
 ### L-002 — HubSpot API key not persistent across container recreates (2026-09)
-**Context:** Beast container recreated; HubSpot integration broke.
+**Context:** Converter container recreated; HubSpot integration broke.
 **Lesson:** API key not persisted in compose env — lost on recreate.
-**Rule:** After every Beast recreate, re-write key to `/home/batman/hermes-six-agent/data/beast/.env` and verify via A2A read-only test. Do not assume prior READY=yes holds.
+**Rule:** After every Converter recreate, re-write key to `/home/batman/hermes-six-agent/data/beast/.env` and verify via A2A read-only test. Do not assume prior READY=yes holds.
 
 ### L-003 — YAML dump silently drops scalar keys (2026-09)
-**Context:** Restoring Magneto mem0/A2A toolset config via yaml.dump.
+**Context:** Restoring Scout mem0/A2A toolset config via yaml.dump.
 **Lesson:** `yaml.dump` silently drops scalar keys. Config appears valid but tools are missing.
 **Rule:** Never yaml.dump a config back. Use restore-from-backup + targeted text patch + yaml.safe_load validate before restart.
 
 ### L-004 — Mem0 toolset wiring requires BOTH platform and builtin entries (2026-09)
-**Context:** Magneto mem0 tools appeared wired but were empty at runtime.
+**Context:** Scout mem0 tools appeared wired but were empty at runtime.
 **Lesson:** Both `platform_toolsets.a2a` AND `known_builtin_toolsets.a2a` must list `[memory, session_search]`.
 **Rule:** Check both locations when debugging missing Mem0 tools.
 

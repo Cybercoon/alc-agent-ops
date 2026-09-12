@@ -1,6 +1,6 @@
 # Docs Index
 
-ALC and Sisu Coaching & Consulting agent fleet documentation.
+ALC and Advantage Leadership Consulting \(ALC\) agent fleet documentation.
 
 ## Core Reference
 | File | Description |
