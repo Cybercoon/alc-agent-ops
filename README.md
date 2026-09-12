@@ -1,36 +1,40 @@
 # ALC Agent Ops
 
-Private repository for the ALC AI infrastructure. Serves two distinct ecosystems.
+Private repository for ALC and Sisu Coaching & Consulting AI agent operations.
+
+This repo covers the **business agent fleet** — agents purpose-built to execute ALC and Sisu business functions. Governance and orchestration infrastructure lives in the separate `ai-council` repo.
 
 ## Structure
 
 ```
 alc-agent-ops/
-  /council/          ← AI Council of Agents (meta-layer: builds + governs infrastructure)
-  /alc-fleet/        ← ALC/Sisu business agents (purpose-built for business functions)
-  /docs/             ← Shared wiki serving both ecosystems
-  /scripts/          ← Shared utility scripts (health checks, relay, A2A tools)
+  /docs/             ← Shared wiki: fleet overview, plans, ICP, infra map
+  /configs/          ← Agent config.yaml files (one per agent)
+  /compose/          ← Docker compose files for X-Mansion and other hosts
+  /plans/            ← Versioned plan documents (v6.2, v6.3, v6.4, v6.5)
+  /scripts/          ← Utility scripts (health checks, relay, A2A tools)
 ```
 
-## Ecosystems
+## ALC / Sisu Agent Fleet
 
-### AI Council of Agents
-Builds and governs the infrastructure. Does not operate within it.
-- **Professor X (PX)** — Orchestration
-- **Architect** — Infra implementation
+Executes business functions for ALC and Sisu Coaching & Consulting.
 
-### ALC/Sisu Agent Fleet
-Executes business functions for ALC and Sisu.
-- **Beast** — CRM / Delivery
-- **Wolverine** — Prospect / Marketing
-- **Magneto** — Parked
-- **Forge** — Parked
+| Agent | Functional Name | Role | Status |
+|---|---|---|---|
+| Beast | Converter | CRM / Conversion / Delivery | Active |
+| Wolverine | Researcher | Prospect / Discovery / Marketing | Active |
+| Magneto | Scout | Prospect (local CPU) | PARKED |
+| Forge | Builder | Delivery (local GPU) | PARKED |
+
+## Governance & Orchestration
+
+The orchestration layer (Orchestrator + Infrastructure agents) is documented in the `ai-council` repo.
 
 ## Quick Links
 - [Fleet Overview](docs/fleet-overview.md)
-- [Two-Ecosystem Model](docs/two-ecosystem-model.md)
 - [Phase 1 Plan](docs/phase-1-plan.md)
 - [Infra Map](docs/infra-map.md)
+- [ICP Definition](docs/icp-definition.md)
 - [Blockers Log](docs/blockers-log.md)
 
 ## Usage

@@ -11,12 +11,12 @@
 
 ## X-Mansion Containers (alc-hermes-x-mansion stack)
 
-| Container | A2A Port | MCP Port | LLM Provider |
-|---|---|---|---|
-| hermes-professor-x | 18701 | 18711 | anthropic (Claude Sonnet 4.6) |
-| hermes-beast | 18702 | 18712 | openai (GPT-Astra) |
-| hermes-wolverine | 18703 | 18713 | xai-oauth (Grok) |
-| hermes-architect | 18704 | 18714 | anthropic (Claude Sonnet 4.6) |
+| Container | Functional Name | A2A Port | MCP Port | LLM Provider |
+|---|---|---|---|---|
+| hermes-professor-x | Orchestrator | 18701 | 18711 | anthropic (Claude Sonnet 4.6) |
+| hermes-beast | Converter | 18702 | 18712 | openai (GPT-Astra) |
+| hermes-wolverine | Researcher | 18703 | 18713 | xai-oauth (Grok) |
+| hermes-architect | Infrastructure | 18704 | 18714 | anthropic (Claude Sonnet 4.6) |
 
 Compose file: `/home/batman/hermes-six-agent/deploy/x-mansion/compose.yaml`
 Stack name: `alc-hermes-x-mansion`
@@ -36,6 +36,6 @@ Image: `nousresearch/claude-code:latest`
 - **192.168.4.84 (batman)** — CPU inference | Ollama
 
 ## SSH Access
-- Architect keypair: `/opt/data/.ssh/id_ed25519_architect`
+- Infrastructure keypair: `/opt/data/.ssh/id_ed25519_architect`
 - Authorized on: `ironman@192.168.4.80`, `ironman@192.168.4.84`
 - X-Mansion batman-host: via A2A/curl only (not SSH)

@@ -2,7 +2,7 @@
 
 ## Ideal Customer Profile (ICP)
 
-**Business:** ALC Consulting
+**Business:** ALC Consulting / Sisu Coaching & Consulting
 
 ### Primary ICP: Military-to-Civilian Transition
 
@@ -33,6 +33,6 @@
 - `source`, `icp_score`, `last_contact`, `stage`
 
 ## ML_FEATURES Spec
-*(Placeholder — to be defined with Wolverine in Phase 2)*
+*(Placeholder — to be defined with Researcher (Wolverine) in Phase 2)*
 - Features: days_to_separation, clearance_level_numeric, sector_match_score, network_gap_score
 - Target: icp_score (0–100)
