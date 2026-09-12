@@ -4,19 +4,21 @@
 
 | Agent | Functional Name | Host | Endpoint | LLM | Role | Status |
 |---|---|---|---|---|---|---|
-| Converter | Converter | X-Mansion (.65) | hermes-converter:9900 | GPT-Astra | CRM/Conversion/Delivery | Active |
-| Researcher | Researcher | X-Mansion (.65) | hermes-researcher:9900 | Grok | Prospect/Discovery/Marketing | Active |
-| Scout | Scout | Danger Room (.84) | 192.168.4.84:9900 | qwen3:20b | Prospect (local CPU) | PARKED |
-| Builder | Builder | Danger Room (.80) | 192.168.4.80:9900 | — | Delivery (local GPU) | PARKED |
+| Orchestrator | Orchestrator | AsteroidM (192.168.4.80) | 192.168.4.80:9900 | Claude Sonnet 4.6 | Orchestration | Active |
+| Converter | Converter | AsteroidM (192.168.4.80) | 192.168.4.80:9901 | GPT-Astra | CRM/Conversion/Delivery | Active |
+| Researcher | Researcher | AsteroidM (192.168.4.80) | 192.168.4.80:9902 | Grok | Prospect/Discovery/Marketing | Active |
+| Scout | Scout | AsteroidM (192.168.4.80) | 192.168.4.80:9903 | qwen3:14b | Prospect (local CPU) | PARKED |
+| Builder | Builder | AsteroidM (192.168.4.80) | 192.168.4.80:9904 | — | Delivery (local GPU) | PARKED |
+| Infrastructure | Infrastructure | AsteroidM (192.168.4.80) | 192.168.4.80:9905 | Claude Sonnet 4.6 | Infra | Active |
+
+> **AsteroidM** = Danger Room server (192.168.4.80) — production hosting for all ALC fleet agents.
+> **X-Mansion** = development / backup environment only (not production hosting).
 
 ## Orchestration Layer (ai-council repo)
 
-| Agent | Functional Name | Host | Endpoint | LLM | Role |
-|---|---|---|---|---|---|
-| Orchestrator | Orchestrator | X-Mansion (.65) | hermes-orchestrator:9900 | Claude Sonnet 4.6 | Orchestration |
-| Infrastructure | Infrastructure | X-Mansion (.65) | hermes-infrastructure:9900 | Claude Sonnet 4.6 | Infra |
+See [https://github.com/Cybercoon/ai-council](https://github.com/Cybercoon/ai-council) for governance and orchestration documentation.
 
-## Danger Room Hardware
+## AsteroidM Hardware
 Host: 192.168.4.80 | GPU: RTX 3060 Ti (8GB) + RTX A2000 (6GB) = 14GB VRAM | RAM: 30GB | Ollama: v0.33.1
 
 ## Phase 1 Infra Status

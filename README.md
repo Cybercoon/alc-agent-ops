@@ -1,6 +1,6 @@
 # ALC Agent Ops
 
-Private repository for ALC and Advantage Leadership Consulting \(ALC\) AI agent operations.
+Private repository for Advantage Leadership Consulting (ALC) AI agent operations.
 
 This repo covers the **business agent fleet** — agents purpose-built to execute ALC business functions. Governance and orchestration infrastructure lives in the separate `ai-council` repo.
 
@@ -17,7 +17,7 @@ alc-agent-ops/
 
 ## ALC Agent Fleet
 
-Executes business functions for ALC and Advantage Leadership Consulting \(ALC\).
+Executes business functions for Advantage Leadership Consulting (ALC).
 
 | Agent | Functional Name | Role | Status |
 |---|---|---|---|
@@ -25,6 +25,10 @@ Executes business functions for ALC and Advantage Leadership Consulting \(ALC\).
 | Researcher | Researcher | Prospect / Discovery / Marketing | Active |
 | Scout | Scout | Prospect (local CPU) | PARKED |
 | Builder | Builder | Delivery (local GPU) | PARKED |
+
+## AI Council of Agents
+
+Governance and orchestration layer. See the [ai-council repository](https://github.com/Cybercoon/ai-council).
 
 ## Governance & Orchestration
 
