@@ -1,0 +1,32 @@
+# Secrets & credentials
+.env
+*.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+bearer_tokens/
+*bearer*
+*token*.txt
+
+# Backups & cache
+*.bak
+*.tmp
+__pycache__/
+*.pyc
+.cache/
+cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs (keep structured logs in repo, not runtime dumps)
+*.log
