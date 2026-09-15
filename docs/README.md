@@ -1,6 +1,6 @@
 # Docs Index
 
-ALC and Advantage Leadership Consulting \(ALC\) agent fleet documentation.
+ALC and Advantage Leadership Consulting (ALC) agent fleet documentation.
 
 ## Core Reference
 | File | Description |
@@ -15,6 +15,7 @@ ALC and Advantage Leadership Consulting \(ALC\) agent fleet documentation.
 | [phase-1-plan.md](phase-1-plan.md) | Phase 1 objectives and infra checklist |
 | [signoff-ledger.md](signoff-ledger.md) | Document version history + signoff status |
 | [blockers-log.md](blockers-log.md) | Active and resolved blockers with work_ids |
+| [architect-phase1-readiness.md](architect-phase1-readiness.md) | Architect ChatGPT implementation-worker Phase 1 readiness |
 
 ## Business Definitions
 | File | Description |
