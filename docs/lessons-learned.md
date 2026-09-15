@@ -40,3 +40,8 @@ Cross-build lessons shared between AI Council and ALC Fleet. Every infrastructur
 **Context:** Attempting to relay API keys via Telegram chat.
 **Lesson:** Keys sent through Telegram are redacted as '***' — unreliable channel for credentials.
 **Rule:** Adam must type credentials manually at the terminal. Never relay secrets through Telegram chat.
+
+### L-008 — gpt-5-mini is not a ChatGPT Codex seat (2026-09-15)
+**Context:** Architect Phase 1 cutover to lower-reasoning ChatGPT. `config.yaml` was set to `openai-codex` / `gpt-5-mini`.
+**Lesson:** ChatGPT Codex OAuth returns HTTP 400 `The 'gpt-5-mini' model is not supported when using Codex with a ChatGPT account.` Hermes then falls back to `xai-oauth` / `grok-4.6`, so the worker looks configured for ChatGPT while the live session is Grok. Live catalog on this account listed `gpt-6-astra`, `gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna`, `gpt-5.5`.
+**Rule:** For Architect’s ChatGPT implementation seat use an entitled Codex slug (`gpt-5.6-luna` as of 2026-09-15). Never claim ChatGPT-primary from `config.yaml` alone — confirm `agent.log` model/provider for the session. Do not assign `gpt-6-astra` to Architect (Orchestrator high-reasoning seat).
